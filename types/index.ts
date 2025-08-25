@@ -64,14 +64,13 @@ export interface FaqData {
 export interface HowWorksStep {
   title: string;
   description: string;
-  icon?: string;
-  image: string;
+  icon: string;
+  effect: string;
 }
 
 export interface HowWorksData {
   title: string;
   steps: HowWorksStep[];
-  effect: string;
 }
 
 // Impact Types

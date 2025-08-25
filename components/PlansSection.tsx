@@ -1,6 +1,6 @@
-'use client';
+"use client";
 
-import { motion } from 'framer-motion';
+import { motion } from "framer-motion";
 
 type FeeRow = { label: string; value: string };
 type ExtraCard = { label: string; value: string };
@@ -25,10 +25,9 @@ export default function FeesSectionBRPay({ data }: FeesSectionProps) {
         /* Usa seus tokens BRPay (verde) já definidos */
         background: `linear-gradient(to top, var(--plans-gradient-from), var(--plans-gradient-to))`,
         // cor dos pontinhos (emerald-600 com alpha, pode ajustar se quiser)
-        ['--fees-grid' as any]: 'rgba(5, 150, 105, 0.14)',
+        ["--fees-grid" as string]: "rgba(5, 150, 105, 0.14)",
       }}
     >
-
       <div className="relative max-w-4xl mx-auto text-center">
         {/* Título com gradiente BRPay */}
         <motion.h2
@@ -39,10 +38,10 @@ export default function FeesSectionBRPay({ data }: FeesSectionProps) {
           className="text-5xl md:text-6xl font-extrabold mb-4 leading-tight"
           style={{
             background:
-              'linear-gradient(90deg, var(--button-gradient-from) 0%, var(--button-gradient-to) 100%)',
-            WebkitBackgroundClip: 'text',
-            backgroundClip: 'text',
-            color: 'transparent',
+              "linear-gradient(90deg, var(--button-gradient-from) 0%, var(--button-gradient-to) 100%)",
+            WebkitBackgroundClip: "text",
+            backgroundClip: "text",
+            color: "transparent",
           }}
         >
           {data.title}
@@ -55,7 +54,7 @@ export default function FeesSectionBRPay({ data }: FeesSectionProps) {
           viewport={{ once: true, amount: 0.4 }}
           transition={{ duration: 0.5, delay: 0.05 }}
           className="text-xl md:text-2xl mb-6"
-          style={{ color: 'var(--plans-desc)' }}
+          style={{ color: "var(--plans-desc)" }}
         >
           {data.description}
         </motion.p>
@@ -63,7 +62,7 @@ export default function FeesSectionBRPay({ data }: FeesSectionProps) {
         {/* Divisória */}
         <div
           className="mx-auto mb-10 h-[2px] max-w-[900px]"
-          style={{ backgroundColor: 'var(--plans-border)' }}
+          style={{ backgroundColor: "var(--plans-border)" }}
         />
 
         {/* Lista de taxas (label acima, valor abaixo) */}
@@ -78,13 +77,13 @@ export default function FeesSectionBRPay({ data }: FeesSectionProps) {
             >
               <div
                 className="text-lg md:text-xl font-semibold"
-                style={{ color: 'var(--plans-text)' }}
+                style={{ color: "var(--plans-text)" }}
               >
                 {fee.label}
               </div>
               <div
                 className="text-2xl md:text-3xl font-extrabold"
-                style={{ color: 'var(--primary)' }} // destaque verde da BRPay
+                style={{ color: "var(--primary)" }} // destaque verde da BRPay
               >
                 {fee.value}
               </div>
@@ -95,7 +94,7 @@ export default function FeesSectionBRPay({ data }: FeesSectionProps) {
         {/* Divisória */}
         <div
           className="mx-auto my-10 h-[2px] max-w-[900px]"
-          style={{ backgroundColor: 'var(--plans-border)' }}
+          style={{ backgroundColor: "var(--plans-border)" }}
         />
 
         {/* Extras: Checkout / Reserva / Saque */}
@@ -110,13 +109,13 @@ export default function FeesSectionBRPay({ data }: FeesSectionProps) {
             >
               <div
                 className="text-lg md:text-xl font-semibold"
-                style={{ color: 'var(--plans-text)' }}
+                style={{ color: "var(--plans-text)" }}
               >
                 {ex.label}
               </div>
               <div
                 className="text-2xl md:text-3xl font-extrabold"
-                style={{ color: 'var(--primary)' }}
+                style={{ color: "var(--primary)" }}
               >
                 {ex.value}
               </div>
@@ -127,7 +126,7 @@ export default function FeesSectionBRPay({ data }: FeesSectionProps) {
         {/* Linha final */}
         <div
           className="mx-auto mt-12 h-[2px] max-w-[900px]"
-          style={{ backgroundColor: 'var(--plans-border)' }}
+          style={{ backgroundColor: "var(--plans-border)" }}
         />
       </div>
     </section>
@@ -136,17 +135,18 @@ export default function FeesSectionBRPay({ data }: FeesSectionProps) {
 
 /* ----- Dados iguais ao print ----- */
 export const feesDataBRPay: FeesBlockData = {
-  title: 'Taxas e Tarifas',
-  description: 'Taxas baixas e aprovações altas, tudo para alavancar o seu negócio.',
+  title: "Taxas e Tarifas",
+  description:
+    "Taxas baixas e aprovações altas, tudo para alavancar o seu negócio.",
   fees: [
-    { label: 'Cartão de Crédito D+2', value: '6.99% + R$1,99*' },
-    { label: 'PIX D+0', value: '1.99% + R$1,99*' },
-    { label: 'Boleto D+2', value: '1.99% + R$3,49*' },
-    { label: 'Tarifa por Saque', value: 'R$ 4,99*' },
+    { label: "Cartão de Crédito D+2", value: "6.99% + R$1,99*" },
+    { label: "PIX D+0", value: "1.99% + R$1,99*" },
+    { label: "Boleto D+2", value: "1.99% + R$3,49*" },
+    { label: "Tarifa por Saque", value: "R$ 4,99*" },
   ],
   extras: [
-    { label: 'Checkout', value: 'Vega - Luna - Aproveei' },
-    { label: 'Reserva', value: 'Negociável' },
-    { label: 'Saque', value: 'Múltiplas Chaves' },
+    { label: "Checkout", value: "Vega - Luna - Aproveei" },
+    { label: "Reserva", value: "Negociável" },
+    { label: "Saque", value: "Múltiplas Chaves" },
   ],
 };
