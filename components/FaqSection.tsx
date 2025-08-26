@@ -126,7 +126,7 @@ export default function FaqSection({ data }: FaqSectionProps) {
         className='mt-14 text-center'
       >
         <PrimaryButton
-          href='https://wa.me/5511910987870'
+          href='https://wa.me/5511993744001'
           target='_blank'
           rel='noopener noreferrer'
           className='flex items-center justify-center gap-2 mx-auto mt-10 w-full max-w-xs'

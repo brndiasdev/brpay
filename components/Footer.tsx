@@ -106,14 +106,6 @@ export default function Footer() {
             >
               <li>
                 <Link
-                  href="#taxas"
-                  className="inline-flex items-center gap-1 hover:text-[var(--footer-text)] transition-colors"
-                >
-                  Taxas e tarifas <ArrowUpRight className="h-4 w-4" />
-                </Link>
-              </li>
-              <li>
-                <Link
                   href="/entrar"
                   className="inline-flex items-center gap-1 hover:text-[var(--footer-text)] transition-colors"
                 >
@@ -179,11 +171,11 @@ export default function Footer() {
             >
               <li className="flex justify-center md:justify-start items-center gap-2">
                 <Phone className="h-4 w-4" aria-hidden />
-                <span>(99) 99999-9999</span>
+                <span>(11) 99374-4001</span>
               </li>
               <li className="flex justify-center md:justify-start items-center gap-2">
                 <Mail className="h-4 w-4" aria-hidden />
-                <span>suporte@brpay.com.br</span>
+                <span>suporte@brpay.co</span>
               </li>
               <li className="flex justify-center md:justify-start items-center gap-2">
                 <Clock className="h-4 w-4" aria-hidden />
@@ -251,7 +243,7 @@ export default function Footer() {
           viewport={{ once: true }}
         >
           <p className="text-center md:text-left">
-            © 2025 BRPay. Todos os direitos reservados.
+            © 2025 BRPay 61.046.596/0001-55. Todos os direitos reservados.
           </p>
 
           <div className="flex flex-wrap items-center justify-center gap-3 text-xs">

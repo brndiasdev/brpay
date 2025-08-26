@@ -16,7 +16,6 @@ function useHasMounted() {
 const navLinks = [
   { text: 'Benefícios', href: '#beneficios' },
   { text: 'Como funciona', href: '#como-funciona' },
-  { text: 'Taxas', href: '#taxas' },
   { text: 'FAQ', href: '#faq' },
 ];
 
@@ -66,7 +65,7 @@ function TopBar() {
         </div>
         <div className="ml-auto">
           <Link
-            href="#taxas"
+            href="/register"
             className="rounded-full px-3 py-1 text-xs font-medium"
             style={{
               color: 'var(--primary)',
@@ -74,7 +73,7 @@ function TopBar() {
               border: '1px solid rgba(5,150,105,0.20)',
             }}
           >
-            Ver taxas
+            Cadastre-se
           </Link>
         </div>
       </div>
@@ -164,9 +163,8 @@ export default function Header() {
 
           {/* Ações */}
           <div className="flex items-center gap-2 md:gap-3">
-            {/* Botão outline: Ver taxas */}
             <Link
-              href="#taxas"
+              href="/register"
               className="hidden md:inline-flex items-center justify-center rounded-full px-4 py-2 text-sm font-semibold transition-all"
               style={{
                 color: 'var(--primary)',
@@ -175,7 +173,7 @@ export default function Header() {
                   'linear-gradient(0deg, rgba(5,150,105,0.08), rgba(5,150,105,0.08))',
               }}
             >
-              Ver taxas
+              Cadastre-se
             </Link>
 
             {/* Botão sólido: Entrar na BRPay */}

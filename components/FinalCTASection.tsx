@@ -62,7 +62,7 @@ export default function FinalCTASection() {
               </PrimaryButton>
 
               <Link
-                href="#taxas"
+                href="/help"
                 className="w-full sm:w-auto rounded-xl px-7 py-3 font-semibold text-center border transition
                            focus:outline-none focus:ring-2 focus:ring-offset-2"
                 style={{
@@ -71,9 +71,9 @@ export default function FinalCTASection() {
                     "var(--cta-secondary-border, rgba(255,255,255,0.25))",
                   background: "var(--cta-secondary-bg, transparent)",
                 }}
-                aria-label="Ver taxas da BRPay"
+                aria-label="Falar com um gerente da BRPay"
               >
-                Ver taxas
+                Falar com gerente
               </Link>
             </motion.div>
 

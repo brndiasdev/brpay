@@ -5,31 +5,20 @@ import { ThemeProvider } from '@/contexts/ThemeContext';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 
-const inter = Inter({ subsets: ['latin'] });
+const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://aproveei.vercel.app'),
-  title: 'Aproveei - O checkout que entrega resultados reais',
-  description: 'Direto, limpo e alta conversão – clique e veja a diferença.',
-  keywords: ['', '', '', '', ''],
+  metadataBase: new URL("https://brpay.co"),
+  title: "BRPay - A melhor solução para pagamentos online",
+  description: "A melhor solução para pagamentos online.",
+  keywords: ["", "", "", "", ""],
   openGraph: {
-    type: 'website',
-    locale: 'pt_BR',
-    url: 'https://aproveei.vercel.app/',
-    siteName: 'Aproveei',
-    title: 'Aproveei - O checkout que entrega resultados reais',
-    description: 'Direto, limpo e alta conversão – clique e veja a diferença.',
-    images: [
-      {
-        url: '/assets/icon-aproveei.png',
-        width: 500,
-        height: 281,
-        alt: 'Aproveei',
-      },
-    ],
-  },
-  icons: {
-    icon: '/favicon.ico',
+    type: "website",
+    locale: "pt_BR",
+    url: "https://brpay.co/",
+    siteName: "BRPay",
+    title: "BRPay - A melhor solução para pagamentos online",
+    description: "A melhor solução para pagamentos online.",
   },
 
   /*
@@ -42,8 +31,9 @@ export const metadata: Metadata = {
   }, */ robots: {
     index: true,
     follow: true,
-  },
+},
 };
+
 
 export default function RootLayout({
   children,

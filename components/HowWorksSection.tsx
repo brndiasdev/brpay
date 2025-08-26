@@ -232,13 +232,6 @@ export default function HowWorksSection({ data }: HowWorksSectionProps) {
               }}
             >
               <div className="p-5 md:p-6">
-                <p
-                  className="text-sm font-medium mb-3"
-                  style={{ color: "var(--how-works-desc)" }}
-                >
-                  Mensagem-chave da etapa
-                </p>
-
                 <AnimatePresence mode="wait">
                   <motion.blockquote
                     key={active}

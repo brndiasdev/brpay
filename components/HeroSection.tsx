@@ -160,7 +160,7 @@ export default function HeroSection({ data }: HeroSectionProps) {
 
             {/* Secundário: outline */}
             <Link
-              href="#taxas"
+              href="/login"
               className="inline-flex items-center rounded-full px-5 py-3 text-sm md:text-base font-semibold transition-all hover:scale-[1.02] active:scale-[0.98]"
               style={{
                 color: 'var(--primary)',
@@ -168,7 +168,7 @@ export default function HeroSection({ data }: HeroSectionProps) {
                 background: 'linear-gradient(0deg, rgba(5,150,105,0.06), rgba(5,150,105,0.06))',
               }}
             >
-              Ver taxas
+              Login
             </Link>
           </div>
 

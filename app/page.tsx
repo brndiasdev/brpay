@@ -2,7 +2,6 @@ import { DiferenciaisRapidos } from "@/components/BeneficiosSection";
 import HeroSection from "@/components/HeroSection";
 import HowWorksSection from "@/components/HowWorksSection";
 import ImpactSection from "@/components/ImpactSection";
-import PlansSection, { feesDataBRPay } from "@/components/PlansSection";
 import FaqSection from "@/components/FaqSection";
 import FinalCTASection from "@/components/FinalCTASection";
 
@@ -21,7 +20,6 @@ export default function Home() {
       <DiferenciaisRapidos data={diferenciaisBRPay} />
       <HowWorksSection data={howWorksData} />
       <ImpactSection data={impactoData} />
-      <PlansSection data={feesDataBRPay} />
       <FaqSection data={faqData} />
       <FinalCTASection />
     </>
